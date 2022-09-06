@@ -5,8 +5,17 @@ int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input number B: ");
 int B = Convert.ToInt32(Console.ReadLine());
 int number = A;
-for(int i = 1; i < B; i++)
+if (B != 0)
 {
-   number *= A;
+   for(int i = 1; i < B; i++)
+   {
+      number *= A;
+   }
+   Console.WriteLine(number);
 }
-Console.WriteLine(number);
+else
+{
+   number = 1;
+   Console.WriteLine(number);
+}
+   
