@@ -3,18 +3,21 @@
 Console.WriteLine("Input any number: ");
 int x = Convert.ToInt32(Console.ReadLine());
 int c;
-//извлечение цифр числа
+int sum = 0;
+
 while(x!=0)
 {
    c = x % 10;
-   Console.WriteLine(c + " ");
+   Console.Write(c + " ");
    x = x / 10;
-}
-// проверка на делитель и нахождение их суммы
 
-if(x % c == 0)
-{
-   sum = sum + c;
-   Console.WriteLine(sum);
+   if(x % c == 0)
+   {
+      sum = sum + c;
+   }
+   
 }
+Console.Write("Сумма равна: " + sum);
+
+
 
